@@ -41,7 +41,7 @@
             <key>PayloadIdentifier</key>
             <string>com.galaxysideloading.dns.sideload</string>
             <key>PayloadOrganization</key>
-            <string>M0onyy</string>
+            <string>Galaxy Hub</string>
             <key>PayloadType</key>
             <string>com.apple.dnsSettings.managed</string>
             <key>PayloadUUID</key>
