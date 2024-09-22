@@ -1,4 +1,4 @@
-<!-- Galaxy DNS Created By M0onyy. -->
+<<!-- Galaxy DNS Created By M0onyy. -->
 
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -9,7 +9,7 @@
         <string>Galaxy | DNS</string>
         
         <key>PayloadDescription</key>
-        <string>DNS Protection: Blocks Third-Party Apps Blacklists And Certificates Revocations.</string>
+        <string>DNS Protection: Made by m0onyy Blocks Third-Party Apps Blacklists And Certificates Revocations.</string>
         
         <key>PayloadVersion</key>
         <integer>1</integer>
