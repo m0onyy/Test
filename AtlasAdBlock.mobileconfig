@@ -6,16 +6,6 @@
     <array>
         <!-- DNS Settings for Atlas Ad Block -->
         <dict>
-            <key>PayloadDisplayName</key>
-            <string>Atlas Ad Block</string>
-            <key>PayloadIdentifier</key>
-            <string>com.atlas.dns.atlasadblock</string>
-            <key>PayloadType</key>
-            <string>com.apple.dnsSettings.managed</string>
-            <key>PayloadUUID</key>
-            <string>1234a567-b890-1234-c567-d8901efgh234</string>
-            <key>PayloadVersion</key>
-            <integer>1</integer>
             <key>DNSSettings</key>
             <dict>
                 <key>DNSProtocol</key>
@@ -30,9 +20,19 @@
                     <string>Connect</string>
                 </dict>
             </array>
+            <key>PayloadDisplayName</key>
+            <string>Atlas Ad Block</string>
+            <key>PayloadIdentifier</key>
+            <string>com.atlas.dns.atlasadblock</string>
+            <key>PayloadType</key>
+            <string>com.apple.dnsSettings.managed</string>
+            <key>PayloadUUID</key>
+            <string>1234a567-b890-1234-c567-d8901efgh234</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
         </dict>
     </array>
-
+    
     <!-- Main Payload Information -->
     <key>PayloadDescription</key>
     <string>Configuration for DNS settings by M0onyy</string>
