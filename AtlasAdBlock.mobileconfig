@@ -32,7 +32,7 @@
             </array>
         </dict>
     </array>
-    
+
     <!-- Main Payload Information -->
     <key>PayloadDescription</key>
     <string>Configuration for DNS settings by M0onyy</string>
