@@ -16,7 +16,7 @@
 			<key>Label</key>
 			<string>CatHub</string>
 			<key>PayloadDescription</key>
-			<string>Configures Web Clip</string>
+			<string>Our Official App </string>
 			<key>PayloadDisplayName</key>
 			<string>CatHub Web Clip</string>
 			<key>PayloadIdentifier</key>
@@ -36,7 +36,7 @@
 		</dict>
 	</array>
 	<key>PayloadDescription</key>
-	<string>Configures web clip</string>
+	<string>Made By moonydev, and some fixes by loyahdev</string>
 	<key>PayloadDisplayName</key>
 	<string>CatHub Web Clip</string>
 	<key>PayloadIdentifier</key>
