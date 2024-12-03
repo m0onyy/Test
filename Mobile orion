@@ -541,7 +541,7 @@ function OrionLib:MakeWindow(WindowConfig)
 		TextScaled = true,
 		TextSize = 14,
 		TextColor3 = Color3.new(0, 0, 0),
-		BackgroundColor = BrickColor.new(255, 179, 236),
+		BackgroundColor = BrickColor.new(0, 0, 0),
 		TextStrokeColor3 = Color3.new(255, 255, 255),
 		TextStrokeTransparency = 0,
 		Size = UDim2.new(0.035, 0, 0.035, 0),
