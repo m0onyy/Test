@@ -515,7 +515,7 @@ function OrionLib:MakeWindow(WindowConfig)
 	end
 	WindowConfig.FreeMouse = WindowConfig.FreeMouse or false
 	WindowConfig.KeyToOpenWindow = WindowConfig.KeyToOpenWindow or "RightShift"
-	WindowConfig.IntroText = WindowConfig.IntroText or "Orion Library"
+	WindowConfig.IntroText = WindowConfig.IntroText or "CatHub Script"
 	WindowConfig.CloseCallback = WindowConfig.CloseCallback or function() end
 	WindowConfig.ShowIcon = WindowConfig.ShowIcon or false
 	WindowConfig.Icon = WindowConfig.Icon or "rbxassetid://8834748103"
