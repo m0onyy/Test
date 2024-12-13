@@ -36,7 +36,7 @@
                 </dict>
             </array>
             <key>PayloadDisplayName</key>
-            <string>Anti-Revoke + Anti-Blacklist 🐣</string>
+            <string>DackHub DNS | Anti Revoke + Anti Blacklist</string>
             <key>PayloadIdentifier</key>
             <string>com.dackhub.dns.sideload</string>
             <key>PayloadOrganization</key>
