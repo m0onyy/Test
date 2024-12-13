@@ -50,7 +50,7 @@
         </dict>
         <dict>
             <key>PayloadDisplayName</key>
-            <string>Ad Blocker</string>
+            <string>DackHub DNS | Ad-Blocker</string>
             <key>PayloadIdentifier</key>
             <string>com.dackhub.dns.adblock</string>
             <key>PayloadType</key>
