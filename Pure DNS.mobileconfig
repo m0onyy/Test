@@ -36,11 +36,11 @@
                 </dict>
             </array>
             <key>PayloadDisplayName</key>
-            <string>CatHub Sideloading DNS</string>
+            <string>Pure Sideloading DNS</string>
             <key>PayloadIdentifier</key>
-            <string>com.cathub.dns.sideload</string>
+            <string>com.pure.dns.sideload</string>
             <key>PayloadOrganization</key>
-            <string>CatHub</string>
+            <string>made by moonydev</string>
             <key>PayloadType</key>
             <string>com.apple.dnsSettings.managed</string>
             <key>PayloadUUID</key>
@@ -50,13 +50,13 @@
         </dict>
     </array>
     <key>PayloadDescription</key>
-    <string>CatHub DNS Profile</string>
+    <string>Pure DNS Profile</string>
     <key>PayloadDisplayName</key>
-    <string>CatHub DNS</string>
+    <string>Pure IOS DNS</string>
     <key>PayloadCreator</key>
-    <string>CatHub 🐈</string>
+    <string>Pure ios</string>
     <key>PayloadIdentifier</key>
-    <string>com.cathub.dns.profile</string>
+    <string>com.pure.dns.profile</string>
     <key>PayloadScope</key>
     <string>User</string>
     <key>PayloadType</key>
