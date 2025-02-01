@@ -1,4 +1,26 @@
 -- THIS SCRIPT ONLY WORKS FOR PHONES NOT IPADS OR DESKTOPS
+local codex = nil
+
+for _, v in pairs(game.CoreGui:GetDescendants()) do
+    if v.Name == "Codex" then
+        codex = v
+        break
+    end
+end
+
+if codex then
+    local gui = codex:FindFirstChild("gui")
+    if gui then
+        local tabs = gui:FindFirstChild("tabs")
+        if tabs then
+            local console = tabs:FindFirstChild("console")
+            if console then
+                console:Destroy()
+            end
+        end
+    end
+end
+
 local gui = Instance.new("ScreenGui")
 gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
