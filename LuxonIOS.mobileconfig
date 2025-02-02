@@ -36,11 +36,11 @@
                 </dict>
             </array>
             <key>PayloadDisplayName</key>
-            <string>DackHub DNS | Anti Revoke + Anti Blacklist</string>
+            <string>Luxon DNS | Anti Revoke + Anti Blacklist</string>
             <key>PayloadIdentifier</key>
             <string>com.dackhub.dns.sideload</string>
             <key>PayloadOrganization</key>
-            <string>DackHub</string>
+            <string>LuxonHub</string>
             <key>PayloadType</key>
             <string>com.apple.dnsSettings.managed</string>
             <key>PayloadUUID</key>
@@ -50,9 +50,9 @@
         </dict>
         <dict>
             <key>PayloadDisplayName</key>
-            <string>DackHub DNS | Ad-Blocker</string>
+            <string>Luxon DNS | Ad-Blocker</string>
             <key>PayloadIdentifier</key>
-            <string>com.dackhub.dns.adblock</string>
+            <string>com.lux.dns.adblock</string>
             <key>PayloadType</key>
             <string>com.apple.dnsSettings.managed</string>
             <key>PayloadUUID</key>
@@ -76,13 +76,13 @@
         </dict>
     </array>
     <key>PayloadDescription</key>
-    <string>made by Dack</string>
+    <string>made by LuxonMods</string>
     <key>PayloadDisplayName</key>
-    <string>DackHub DNS</string>
+    <string>LuxonHub DNS</string>
     <key>PayloadCreator</key>
-    <string>DackHub🐣</string>
+    <string>LuxonMods all rights reserved</string>
     <key>PayloadIdentifier</key>
-    <string>com.dackhubos.profile</string>
+    <string>com.luxon.profile</string>
     <key>PayloadScope</key>
     <string>User</string>
     <key>PayloadType</key>
