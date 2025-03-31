@@ -4,6 +4,7 @@ local RunService = game:GetService("RunService")
 local LocalPlayer = game:GetService("Players").LocalPlayer
 local Mouse = LocalPlayer:GetMouse()
 local HttpService = game:GetService("HttpService")
+local CoreGui = game:GetService("CoreGui")
 
 local OrionLib = {
 	Elements = {},
@@ -18,9 +19,18 @@ local OrionLib = {
 			Divider = Color3.fromRGB(60, 60, 60),
 			Text = Color3.fromRGB(240, 240, 240),
 			TextDark = Color3.fromRGB(150, 150, 150)
+		},
+
+		Bliz_T = {
+			Main = Color3.fromRGB(0, 0, 0), -- Preto para o fundo
+			Second = Color3.fromRGB(20, 20, 20), -- Cinza bem escuro para contraste
+			Stroke = Color3.fromRGB(100, 150, 255), -- Azul bebê claro para detalhes
+			Divider = Color3.fromRGB(80, 120, 200), -- Azul bebê mais escuro para divisores
+			Text = Color3.fromRGB(180, 220, 255), -- Azul bebê claro para textos
+			TextDark = Color3.fromRGB(150, 180, 230) -- Azul bebê amarelado para texto secundário
 		}
 	},
-	SelectedTheme = "Default",
+	SelectedTheme = "Bliz_T",
 	Folder = nil,
 	SaveCfg = false
 }
@@ -42,7 +52,9 @@ local function GetIcon(IconName)
 	else
 		return nil
 	end
-end   
+end
+
+local useStudio = RunService:IsStudio() or false
 
 local Orion = Instance.new("ScreenGui")
 local Modal = Instance.new("TextButton")
@@ -50,11 +62,18 @@ local Modal = Instance.new("TextButton")
 local FocusDrag = nil
 
 Orion.Name = "Orion"
-if syn then
-	syn.protect_gui(Orion)
-	Orion.Parent = game.CoreGui
-else
-	Orion.Parent = gethui() or game.CoreGui
+
+getgenv().gethui = function() return game.CoreGui end
+
+if gethui then
+	Orion.Parent = gethui()
+elseif syn and syn.protect_gui then 
+	syn.protect_gui(Rayfield)
+	Orion.Parent = CoreGui
+elseif not useStudio and CoreGui:FindFirstChild("RobloxGui") then
+	Orion.Parent = CoreGui:FindFirstChild("RobloxGui")
+elseif not useStudio then
+	Orion.Parent = CoreGui
 end
 
 if gethui then
@@ -1092,7 +1111,7 @@ function OrionLib:MakeWindow(WindowConfig)
 					TweenService:Create(ToggleFrame, TweenInfo.new(0.25, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {BackgroundColor3 = OrionLib.Themes[OrionLib.SelectedTheme].Second}):Play()
 				end)
 
-				AddConnection(Click.MouseButton1Up, function()
+				AddConnection(Click.Activated, function()
 					TweenService:Create(ToggleFrame, TweenInfo.new(0.25, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {BackgroundColor3 = Color3.fromRGB(OrionLib.Themes[OrionLib.SelectedTheme].Second.R * 255 + 3, OrionLib.Themes[OrionLib.SelectedTheme].Second.G * 255 + 3, OrionLib.Themes[OrionLib.SelectedTheme].Second.B * 255 + 3)}):Play()
 					SaveCfg(game.GameId)
 					Toggle:Set(not Toggle.Value)
