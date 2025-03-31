@@ -30,7 +30,7 @@ local OrionLib = {
 			TextDark = Color3.fromRGB(150, 180, 230) -- Azul bebê amarelado para texto secundário
 		}
 	},
-	SelectedTheme = "Bliz_T",
+	SelectedTheme = "Default",
 	Folder = nil,
 	SaveCfg = false
 }
