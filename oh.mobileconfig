@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+ "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+    <key>PayloadIdentifier</key>
+    <string>com.example.hideallapps</string>
+    <key>PayloadUUID</key>
+    <string>ABCDEF12-3456-7890-ABCD-EF1234567890</string>
+    <key>PayloadDisplayName</key>
+    <string>Hide All Apps Except Settings</string>
+    <key>PayloadOrganization</key>
+    <string>YourOrg</string>
+    <key>PayloadDescription</key>
+    <string>Hides all apps except Settings on supervised devices</string>
+    <key>PayloadContent</key>
+    <array>
+
+        <!-- Restrictions Payload -->
+        <dict>
+            <key>PayloadType</key>
+            <string>com.apple.applicationaccess</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.example.restrictions</string>
+            <key>PayloadUUID</key>
+            <string>12345678-1234-5678-1234-567812345678</string>
+            <key>PayloadDisplayName</key>
+            <string>Restrictions</string>
+            <key>blacklistedAppBundleIDs</key>
+            <array>
+                <string>*</string> <!-- This hides all apps -->
+            </array>
+            <key>whitelistedAppBundleIDs</key>
+            <array>
+                <string>com.apple.Preferences</string> <!-- Settings app -->
+            </array>
+        </dict>
+
+        <!-- Home Screen Layout -->
+        <dict>
+            <key>PayloadType</key>
+            <string>com.apple.homescreenlayout</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.example.homescreen</string>
+            <key>PayloadUUID</key>
+            <string>87654321-4321-8765-4321-876543210987</string>
+            <key>PayloadDisplayName</key>
+            <string>Home Screen Layout</string>
+            <key>layout</key>
+            <array>
+                <array>
+                    <dict>
+                        <key>bundleIdentifier</key>
+                        <string>com.apple.Preferences</string>
+                    </dict>
+                </array>
+            </array>
+        </dict>
+
+    </array>
+</dict>
+</plist>
